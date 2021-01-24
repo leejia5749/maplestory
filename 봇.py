@@ -105,4 +105,5 @@ async def on_message(message): # on_message() event : when the bot has recieved 
                 embed.add_field(name="유니온", value=infoList[12] + "( 레벨:" + characterUnionRanking + " )", inline=True)
             embed.add_field(name="업적 순위", value=infoList[14], inline=True)
             await message.channel.send("유저: " + playerNickname +" 의 정보다잉...", embed=embed)
-client.run('ODAyOTExMjA3MjAzMDEyNjA4.YA2HVQ.4E-YQLGuAeeL0DqUxddWCIl727Q')
+access_token = os.environ["bot_token"]
+client.run(access_token)
